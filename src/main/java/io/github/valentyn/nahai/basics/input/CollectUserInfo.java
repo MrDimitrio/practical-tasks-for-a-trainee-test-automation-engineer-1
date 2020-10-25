@@ -1,4 +1,5 @@
 package io.github.valentyn.nahai.basics.input;
+import java.util.Scanner;
 
 /*
  * Task:
@@ -9,6 +10,30 @@ package io.github.valentyn.nahai.basics.input;
  */
 public class CollectUserInfo {
     public static void main(String[] args) {
-        // your code here
+
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("What is your name? Type here: ");
+        String name = scan.nextLine();
+        System.out.println("What is your surname? Type here: ");
+        String surname = scan.nextLine();
+        System.out.println("What is you marital status? Select: Y/N  ");
+        
+        String maritalStatus = scan.nextLine();
+        System.out.println("How old are you? Type here:  ");
+        int age = scan.nextInt();        
+        
+        System.out.println("Name:  " + name);
+        System.out.println("Surname:  " + surname);
+        System.out.println("Age:  " + age);
+        
+        if (maritalStatus.equals("Y")) {
+            System.out.println("Status:  Married");
+        } else if (maritalStatus.equals("N")) {
+            System.out.println("Status:  Single");
+        } else {
+            System.out.println("Status: Undefined");
+        }    
+        
     }
 }
