@@ -1,14 +1,12 @@
 package io.github.valentyn.nahai.basics.output;
 
-/*
- * Task:
- * Say "Hello!" to the world and tell a couple words about yourself!
- */
 public class HelloWorldProgram {
     public static void main(String[] args) {
-        // Use "System.out.println("your message");" to output your messages.
-        // Don't shy to copy the above piece of code to provide as many messages as you want.
-        
-        /* Your code here */
+        System.out.println("Hello world!");
+        System.out.println("My name is Dmitriy");
+        System.out.println("I have been working as a manual tester for almost two years");
+        System.out.println("I wish everyone productive and interesting learning and professional growth !!!");
+
     }
+
 }
